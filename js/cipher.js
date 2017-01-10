@@ -45,3 +45,12 @@ var backwards = function() {
 }
 
 backwards(userEntry);
+
+$(document).ready(function(){
+  $ ('#original').click(function(){
+    alert(userEntry);
+  });
+  $ ('#remake').click(function(){
+    alert(backwards(userEntry));
+  });
+})
